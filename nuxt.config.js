@@ -1,13 +1,10 @@
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
-  title: "Nuxstack",
+  title: "Nostr Boutique Admin",
 
   compatibilityDate: "2025-12-01",
 
   vite: {
-    vue: {
-      customElement: true
-    },
     plugins: [
       tailwindcss()
     ]
@@ -15,7 +12,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Nuxtstack"
+      title: "Nostr Boutique Admin",
+      meta: [
+        {
+          name: "description",
+          content: "Merchant admin client for listings, orders, payments, and profile management on Nostr."
+        }
+      ]
     }
   },
 
