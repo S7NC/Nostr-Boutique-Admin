@@ -615,7 +615,7 @@ onMounted(async () => {
         <div v-if="authMethod === 'bunker'" class="space-y-3">
           <p class="text-sm text-[var(--muted)]">Use bunker URL, nostrconnect URL, or NIP-05 bunker input.</p>
           <input v-model="bunkerInput" class="w-full rounded-lg border border-[var(--line)] bg-white px-3 py-2 text-sm" placeholder="bunker://... or nostrconnect://..." />
-          <button class="w-full rounded-lg bg-[var(--ink-1)] px-4 py-2 text-sm font-semibold text-white hover:bg-[var(--ink-0)]" @click="connectBunker">
+          <button class="w-full rounded-lg bg-[var(--brand)] px-4 py-2 text-sm font-semibold text-white hover:bg-[var(--brand-strong)]" @click="connectBunker">
             Continue with Remote Signer
           </button>
           <a v-if="authStore.authUrl" :href="authStore.authUrl" target="_blank" rel="noreferrer" class="block text-xs text-[var(--brand-strong)]">Open auth challenge</a>
